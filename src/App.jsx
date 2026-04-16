@@ -79,7 +79,7 @@ export default function App() {
       wishlist, toggleWishlist,
       sidebarCollapsed, setSidebarCollapsed,
     }}>
-      <BrowserRouter>
+      <BrowserRouter basename="/jewellery-demo-app">
         <AppLayout>
           <Routes>
             <Route path="/" element={<Dashboard />} />
