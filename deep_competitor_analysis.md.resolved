@@ -1,0 +1,569 @@
+# Deep Competitive Analysis: B2B Jewellery Inventory & Order Management Platform
+
+> Researched April 2026 | Sources: Official websites, Capterra, G2, SoftwareSuggest, Sourceforge, GoodFirms
+
+---
+
+## Section 1: Your Product — "The Platform" (j.md)
+
+### Core Identity
+A **single-owner B2B Jewellery Sales & Order Enablement Platform**. A manufacturer or wholesaler runs this platform privately for their own 100+ dealer network. Dealers log in, browse a visual catalogue, build carts, and punch orders. The owner approves orders, tracks inventory, and manages the business through analytics.
+
+### What Makes It Unique (Before Any Comparison)
+1. **Dealer-first UX** — Designed for the buying experience, not the billing experience.
+2. **Not multi-tenant** — This is a private, single-owner platform. It is NOT a marketplace or SaaS shared across jewellers.
+3. **No GST / Tax accounting** — Intentionally out of scope. Creates a quotation-only model to stay frictionless.
+4. **Dynamic schema** — Custom fields engine means one platform can serve a Kundan wholesaler and a Diamond solitaire manufacturer with completely different data models.
+5. **AI-first discovery** — Visual similarity search and auto-tagging solve real problems for dealers and workforce respectively.
+6. **B2B e-commerce DNA** — Cart, checkout, order approval, order history. None of the competitors think this way.
+
+---
+
+## Section 2: Competitor PRDs
+
+---
+
+### 2.1 Jwelly ERP (by MMI Softwares Pvt. Ltd.)
+
+**Website:** https://jwelly.com | https://jwelly.ai  
+**HQ:** Mathura, Uttar Pradesh  
+**Tagline:** "Best Jewellery Business Software in India"  
+**Rating:** 4.7/5 (455 reviews, self-reported)  
+**Operating Systems:** Windows, Android, iOS, Mac OS  
+**Deployment:** Client-server (Windows) + Cloud-hosted option  
+
+#### Product Vision
+A full-spectrum ERP for the entire jewellery trade—from a single retail counter to a multi-branch chain, wholesale house, manufacturing unit, bullion trader, or money lender. It is the most feature-complete platform of the three competitors.
+
+#### Target Segments
+| Segment | Focus |
+|---|---|
+| Retail Showroom | POS, Billing, CRM, Schemes |
+| Wholesale | Bulk orders, Party accounts, Metal trading |
+| Manufacturing | Karigar, Job work, Production |
+| Bullion Trading | Metal rate-based transactions |
+| Girvi / Money Lending | Pledge-based gold loan management |
+
+#### Full Feature Breakdown
+
+**INVENTORY MANAGEMENT**
+- Real-time stock tracking by weight, purity, piece, batch, tag, and carat
+- Barcode + RFID integration for tagging every item
+- Multi-location / multi-branch inventory under one dashboard
+- Low stock alerts
+- Stock-by-image filtering (AI visual search — see AI section)
+- Bulk stock counting (physical to digital audit)
+- Weight configuration: Gross, Net, Fine, Making Weight
+
+**SALES & BILLING (RETAIL/POS)**
+- Lightning-fast POS screen optimized for showroom counter speed
+- Barcode scan-to-bill
+- GST-compliant invoices (CGST, SGST, IGST)
+- Tax Invoice, Estimate, Quotation, Approval
+- E-invoicing (IRN generation)
+- Multiple payment modes (cash, card, UPI, gold tendering)
+- Discount, scheme, and coupon application
+- Returns and exchanges
+- Bill sharing via WhatsApp / SMS
+
+**WHOLESALE MODULE (One-Screen Entry)**
+- Single screen for: Sales, Sale Returns, Purchases, Metal Receipts, Cash Receipts, Bhav (gold rate) Fixation, Stock Transfer — all in one view
+- Bulk inventory in poly or box format
+- Customer-wise profit report (adjusting for metal rate, wastage, labour)
+- Automatic wastage and labour rate picking based on customer history
+- Party ledger sharing via WhatsApp
+- Mobile app for fast billing at exhibitions
+
+**MANUFACTURING MODULE**
+- Karigar (artisan) job assignment and tracking
+- Material issuance and return tracking
+- Fine weight / net gold tracking per job
+- Job-wise and setting-wise production stages (casting, polishing, setting)
+- Payroll automation from job completion
+- Gold balance ledger per karigar
+- Galai (refining / gold loss) tracking
+- Diamond processing module
+- Job sheet generation
+
+**FINANCIAL ACCOUNTING**
+- Full double-entry accounting: Ledger, P&L, Balance Sheet, Trial Balance
+- Auto-calculation of TDS / TCS
+- GSTR-1, GSTR-3B report generation
+- Tally integration (export to Tally format)
+- HSN/SAC code support
+- Multi-currency (for export / NRI dealings)
+
+**GIRVI — GOLD LOAN / MONEY LENDING**
+- Pledge item registration with photo
+- Interest auto-calculation (flat / reducing basis)
+- Due date reminders
+- Pledge release / forfeit workflows
+- Agreement printing
+
+**CRM & CUSTOMER MANAGEMENT**
+- Customer profiles with purchase history
+- Birthday / anniversary reminders (automated SMS/WhatsApp)
+- Loyalty points and digital kitty/chit fund schemes
+- Customer-facing mobile app (for loyalty transparency)
+- SMS / Email / WhatsApp marketing campaigns
+
+**MULTI-BRANCH & OPERATIONS**
+- Centralized owner dashboard across all branches
+- Branch-wise P&L
+- Inter-branch stock transfer
+- User roles and permissions
+
+**OWNER APP**
+- Monitor business in real-time from phone
+- Check sales, stock levels, customer activity
+- Alerts for reorder points, scheme renewals, birthdays
+
+**JWELLY AI MODULE** (jwelly.ai — separate product under same company)
+- **Image Recognition / Stock Filter by Image:** Search inventory using a product photo
+- **Smart Catalog:** Converts raw product photos into professional studio images (background removal, enhancement, watermarking) — bulk processing
+- **Data Analytics:** Sales analysis for smart purchase planning
+- **Smart Alerts:** Voice-activated alerts for critical tasks
+- **Voice Activated Operations:** Billing, reports, accounts via voice commands
+- **Customer Live:** (photo-to-studio-image conversion for catalogues)
+
+**PRICING**
+- No public pricing; custom quote model
+- Based on: number of outlets, modules selected, number of users
+- Typically annual licensing fee (perpetual + AMC model)
+
+**GAPS / WEAKNESSES**
+- No true dealer-facing self-service portal with cart + order punch
+- No dynamic/custom field schema engine
+- No vector-based visual similarity search for dealers ("find me something like this")
+- No AI auto-tagging on product upload
+- Heavy complexity — overwhelming for new users
+- No demand forecasting (predictive analytics)
+- No per-product-image embedding for discovery
+- The Jwelly AI visual search is an internal staff tool, not a dealer-facing discovery tool
+
+---
+
+### 2.2 SwarnaVyapar
+
+**Website:** https://swarnavyapar.in  
+**HQ:** Zaveri Bazaar, Mumbai, Maharashtra  
+**Tagline:** "#1 AI-Powered Jewellery Management Software in India"  
+**Users:** 500+ jewellers across India (self-reported)  
+**Deployment:** Cloud SaaS (web + mobile)  
+
+#### Product Vision
+A modern, design-forward, AI-native jewellery management application for retail showroom owners. Differentiated by AI voice commands and invoice scanning. Positioned as the "modern alternative" to legacy windows-based ERP solutions like Jwelly.
+
+#### Target Segments
+| Segment | Focus |
+|---|---|
+| Retail Showroom Owner | Billing, inventory, CRM, AI assistant |
+| Showroom Manager | Voice-driven operations, analytics |
+| Sales Counter Staff | Fast billing, stock lookup |
+
+> ⚠️ **No dedicated B2B / Wholesale / Dealer module.** SwarnaVyapar is exclusively a B2C retail tool.
+
+#### Full Feature Breakdown
+
+**AI SUITE (Core Identity)**
+- **AI Voice Assistant:** Create invoices, fetch stock, query analytics via voice commands. Marketed as "saves 3x time"
+- **Swarna AI Business Analyst:** Ask business questions in plain English — "show me low stock items", "who are my top customers this month", "what sold most this Diwali" — gets instant structured answers
+- **AI Invoice Digitization (Vendor Invoice Scanning):** Point phone camera at any vendor paper invoice; AI extracts line items, weights, and rates (claims 92% accuracy). Supports Hindi, English, regional scripts
+- **Demand Forecasting:** AI predicts seasonal demand spikes (case study: 90% accuracy on Akshaya Tritiya demand prediction)
+
+**BILLING & INVOICING**
+- GST-compliant invoice creation
+- Live gold rate integration (rates auto-update in pricing)
+- Making charges integration
+- Mobile-shareable customer invoice outputs
+- Built for high counter-speed during peak showroom hours
+
+**INVENTORY MANAGEMENT**
+- QR-tagged inventory (auto-generates QR codes: G001, G002...)
+- Bulk import (claims: "Add 100 items in 5 minutes")
+- Mobile camera barcode/QR scanning (iPhone or Android)
+- Smart low-stock alerts
+- Audit trail — every change logged with timestamp
+- Claims: 70% faster audits vs. manual; 100% accuracy; 2-second scan speed
+- 50K+ items tracked across all customers (platform metric)
+- Fast-moving inventory visibility, low-stock risk dashboard
+- Category health tracking
+
+**ONLINE DIGITAL CATALOGUE**
+- Transforms inventory into an online visual catalogue
+- One-tap WhatsApp sharing with customers
+- Smart search within catalogue
+- Customer wishlist / save favourites
+- Auto-updated pricing (linked to live gold rates)
+
+**FINANCIAL MANAGEMENT**
+- Digital Khata Book (replaces paper ledgers)
+- WhatsApp payment reminders (one-tap to send)
+- Gold loan / Girvi tracking with auto-interest calculation
+- Loan due date tracking and agreement printing
+- Audit trail on all transactions
+- Available 24/7 with bank-grade security
+
+**CRM & LOYALTY**
+- Automated rewards points system
+- Tiered rewards: Gold, Platinum, Diamond tiers (auto-upgrade)
+- Points calculated automatically per purchase (gold, silver, diamond)
+- Redeem points directly on invoice
+- Customer lifetime value (LTV) tracking
+- Purchase pattern analysis per customer
+- Claims: 40% increase in repeat sales; 3x retention
+
+**PLATFORM CAPABILITIES**
+- Offline operation with auto-sync when online
+- Military-grade encryption (self-reported)
+- Multi-user support with granular permission roles (owner/manager/staff)
+- Works on web; mobile app available
+
+**PRICING MODEL**
+- 3-tier SaaS model:
+  - **Starter** — Essential tools for individual jewellers
+  - **Professional** — Advanced management for growing stores
+  - **Business** — Enterprise solution for established chains
+- Specific prices not listed; "No credit card required. Upgrade anytime."
+
+**GAPS / WEAKNESSES**
+- No B2B / wholesale / dealer management capability at all
+- No order punching / approval workflow
+- No multi-owner isolation (not designed for a single owner with 100+ dealers)
+- Very new company — limited track record
+- No dynamic custom field schema
+- No AI visual similarity search for product discovery
+- No auto-tagging from product images on upload
+- WhatsApp sharing is one-directional (push), not a two-way dealer ordering portal
+- No detailed analytics on dealer behaviour / inactive dealers / dealer leaderboard
+- Wishlist is for customer B2C use, not B2B dealer use
+
+---
+
+### 2.3 JewelMaker
+
+**Website:** https://jewelmaker.ai  
+**HQ:** Ahmedabad, Gujarat (Times Square, Thaltej)  
+**Tagline:** "Simplify all jewellery operations in just 7 days"  
+**Users:** 110+ Indian jewellers (self-reported)  
+**Deployment:** Cloud SaaS + Offline capability  
+
+#### Product Vision
+An operationally practical, rapidly deployable all-in-one tool for every segment of the jewellery supply chain — with a strong focus on the Indian market's multi-lingual, multi-channel needs. Marketing emphasizes rapid onboarding ("live in 1 day, trained in 7 days").
+
+#### Target Segments
+| Segment | Focus |
+|---|---|
+| Retailer | POS, Tablet Catalog, CRM, GST Billing |
+| Wholesaler | Bulk orders, B2B Customer Portal, Catalogue |
+| Manufacturer | Production, Karigar, Cost Calculation |
+
+#### Full Feature Breakdown
+
+**FOR RETAILERS**
+- Quick GST-compliant invoicing (claims: billing in 2-3 minutes)
+- Multiple payment mode support
+- Automatic tax calculation
+- Real-time stock updates with easy stock transfers
+- RFID integration (for premium showrooms)
+- Barcode scanning and generation
+- Customizable price tags
+- Customer Profile Management (purchase history, preferences, custom orders)
+- Monthly Scheme Programs (chit fund / savings scheme integration)
+- Karigar work tracking
+- Multi-store management from central dashboard
+- Sales analytics and reporting
+- Tablet-based product catalog (for over-the-counter browsing with customer)
+- Offline capability at exhibitions with auto-sync on reconnect
+
+**FOR WHOLESALERS**
+- **B2B Customer Portal:** *Self-service ordering for retailers* — this is the most relevant competitive feature
+- Bulk order management and handling
+- Bulk Sales / Purchase workflows
+- Live order tracking for both parties
+- GST billing for B2B transactions
+- Customized pricing for different B2B customers
+- Credit limit management per customer
+- Inventory forecasting
+- Hours & Minutes-based product allocation
+- Automated push notifications on order status
+- Digital catalog creation and sharing
+- Real-time product updates in catalog
+- WhatsApp integration for catalog sharing
+- Profitability analysis per customer
+
+**FOR MANUFACTURERS**
+- Real-time production tracking across workstations
+- Precise gold and gemstone inventory tracking
+- Wastage calculation per production stage
+- Material allocation per order
+- Karigar performance monitoring
+- Quality control checkpoints
+- Accurate cost calculation per piece
+- Labor cost tracking
+- Digital design catalog creation from manufacturing stage
+- Work-in-progress monitoring
+- Production capacity planning
+- Integration with CAD/CAM design software (claimed)
+
+**PLATFORM-WIDE**
+- Offline/online with automatic syncing
+- Data stored in India (data residency compliance)
+- Bank-level security (claimed)
+- Role-based access (owner, manager, staff)
+- 24/7 support in Hindi, Gujarati, Marathi, English
+- Free setup and training (onboarding in 1 day)
+- Regular technical updates
+
+**PRICING**
+- No public pricing; contact/demo model
+- Referral program in place (suggests freemium or partner-driven growth)
+
+**GAPS / WEAKNESSES**
+- B2B Customer Portal is mentioned but appears shallow — no evidence of:
+  - Cart persistence across sessions
+  - Order approval workflow (Pending → Approved → Rejected / Partial Approval)
+  - Line-item level partial approval
+  - Automated inventory deduction on approval
+  - Real-time catalogue with WebSocket updates
+- No AI features whatsoever (no AI tagging, no visual similarity search, no NLP search, no demand forecasting, no business digest)
+- No dynamic custom fields schema
+- No dealer-specific analytics (leaderboard, inactive dealers alert, preference analysis)
+- No visual similarity search (consumer-grade discovery)
+- No wishlist for B2B dealers
+- No product collection/campaign grouping feature
+
+---
+
+## Section 3: Exhaustive Feature-by-Feature Comparison
+
+### 3.1 Core Platform & Architecture
+
+| Dimension | Your Platform | Jwelly ERP | SwarnaVyapar | JewelMaker |
+|---|---|---|---|---|
+| **Primary Use Case** | B2B order enablement (Wholesaler → Dealer) | Full ERP (Retail + Wholesale + Mfg) | Retail showroom ops | All-in-one (Retail + Wholesale + Mfg) |
+| **Deployment Type** | Cloud SaaS (Next.js/PostgreSQL) | Windows client-server + Cloud option | Cloud SaaS | Cloud SaaS + Offline |
+| **Multi-tenancy** | No (single owner, N dealers) | Yes (multi-branch) | Yes (multi-store) | Yes (multi-store) |
+| **Offline Support** | No (by design) | Yes | Yes | Yes |
+| **Mobile App** | PWA (planned) | Native app (iOS/Android) | Native app | Native app |
+| **Tablet Optimized** | Yes (responsive) | Yes | Yes | Yes (tablet catalog) |
+| **Tech Stack** | Next.js, PostgreSQL, pgvector, Socket.io | Proprietary Windows/.NET | Modern SaaS (unknown stack) | Unknown (likely PHP/React) |
+| **Real-Time Updates** | Yes (WebSockets/SSE) | No (polling) | Unknown | No |
+
+---
+
+### 3.2 Inventory Management
+
+| Dimension | Your Platform | Jwelly ERP | SwarnaVyapar | JewelMaker |
+|---|---|---|---|---|
+| **Real-Time Stock** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Barcode/RFID** | ❌ No | ✅ Yes (both) | ✅ QR + Barcode | ✅ RFID + Barcode |
+| **Weight Tracking** | ✅ (Gross, Net, fields) | ✅ Deep (Fine, Making) | ✅ (milligram level) | ✅ Yes |
+| **Low Stock Alerts** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Multi-location Stock** | ❌ (single owner) | ✅ Multi-branch | ✅ Multi-store | ✅ Multi-store |
+| **Stock Audit** | ✅ (audit log) | ✅ Physical audit | ✅ QR scan-based | ✅ RFID/Barcode |
+| **Bulk Import CSV** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Custom Fields** | ✅ **Yes (dynamic schema)** | ❌ Fixed schema | ❌ Fixed schema | ❌ Fixed schema |
+| **Product Status Mgmt** | ✅ (Active/Inactive/Discontinued) | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Tags / Labels** | ✅ (Bestseller, New Arrival, etc.) | ❌ Limited | ❌ Limited | ❌ Limited |
+| **Image per Product** | ✅ Multiple images per SKU | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Collections / Campaigns** | ✅ Yes (Diwali, Wedding) | ❌ No | ❌ No | ❌ No |
+
+---
+
+### 3.3 Dealer / B2B Portal
+
+| Dimension | Your Platform | Jwelly ERP | SwarnaVyapar | JewelMaker |
+|---|---|---|---|---|
+| **Dedicated Dealer Login** | ✅ Yes, full portal | ❌ No dealer-facing portal | ❌ No | ✅ B2B portal (basic) |
+| **Visual Catalogue Browsing** | ✅ Grid + List, image-forward | ❌ Staff-only catalogue | ✅ Online catalogue | ✅ WhatsApp/app sharing |
+| **Advanced Filters** | ✅ Category, Metal, Purity, Price, Weight, Custom | ✅ (Internal use) | ✅ (Consumer facing) | ✅ (Basic) |
+| **Natural Language Search** | ✅ AI-powered (NL → Filters) | ❌ No | ✅ Basic NL (own inventory) | ❌ No |
+| **Cart System** | ✅ Full cart with session persistence | ❌ No | ❌ No | ⚠️  Likely basic |
+| **Order Punching** | ✅ Yes — Dealer self-punches | ❌ Owner punches | ❌ No | ⚠️ Claimed self-service |
+| **Order Approval Workflow** | ✅ Pending → Approved / Rejected / Partial | ❌ Owner-side billing | ❌ No | ⚠️ Unknown depth |
+| **Line-Item Partial Approval** | ✅ Yes | ❌ No | ❌ No | ❌ No |
+| **Inventory Deduction on Approval** | ✅ Yes (auto, on approve only) | ✅ Yes (on billing) | ✅ Yes (on invoice) | ✅ Yes |
+| **Dealer-Specific Pricing** | ✅ Yes (tiers / discounts) | ✅ Yes (Wholesale) | ❌ No | ✅ Yes |
+| **Credit Limit Management** | ❌ Not planned | ❌ N/A | ❌ No | ✅ Yes |
+| **Wishlist / Favourites** | ✅ Yes | ❌ No | ✅ (B2C context) | ❌ No |
+| **Dealer Order History** | ✅ Full history with status | ❌ (Owner-side ledger) | ❌ No | ⚠️ Unknown |
+| **Real-Time Stock for Dealers** | ✅ Yes (WebSockets) | ❌ No | ⚠️ Unknown | ❌ No |
+| **In-App Notifications for Dealers** | ✅ Yes (order status, new products) | ❌ No | ❌ No | ✅ Push notifications |
+
+---
+
+### 3.4 Owner / Admin Features
+
+| Dimension | Your Platform | Jwelly ERP | SwarnaVyapar | JewelMaker |
+|---|---|---|---|---|
+| **Incoming Orders Dashboard** | ✅ Yes | ✅ (as billing/sales) | ✅ (as sales) | ✅ Yes |
+| **Order Management (Approve/Reject)** | ✅ Yes | ❌ (No approval concept) | ❌ No | ⚠️ Unknown |
+| **Quotation Generation (PDF)** | ✅ Yes | ✅ Yes (invoice-level) | ✅ Yes | ✅ Yes |
+| **GST Invoice** | ❌ Intentionally excluded | ✅ Full GST | ✅ Full GST | ✅ Full GST |
+| **Tally Integration** | ❌ No | ✅ Yes | ❌ No | ❌ No |
+| **Manufacturing / Karigar Mgmt** | ❌ No (out of scope) | ✅ Deep | ❌ No | ✅ Yes |
+| **Girvi / Gold Loan** | ❌ No | ✅ Yes | ✅ Yes | ❌ No |
+| **Product Edit History / Audit Log** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Bulk Product Import** | ✅ CSV/Excel | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Custom Field Manager** | ✅ **Yes (add/edit/reorder/archive fields)** | ❌ No | ❌ No | ❌ No |
+| **Dynamic Form Rendering** | ✅ **Schema-driven** | ❌ No | ❌ No | ❌ No |
+| **Dealer Management** | ✅ Add/edit/deactivate dealers | ❌ Not a concept | ❌ No | ✅ Yes (B2B customers) |
+| **Dealer Activity Tracking** | ✅ Login, views, cart, orders | ❌ No | ❌ No | ❌ Unknown |
+| **Dark / Light Mode** | ✅ Both | ❌ No | ✅ Yes | ❌ No |
+| **Sidebar Navigation** | ✅ Collapsible sidebar | ⚠️ Traditional ERP UI | ✅ Modern nav | ⚠️ Standard nav |
+
+---
+
+### 3.5 Analytics & Business Intelligence
+
+| Dimension | Your Platform | Jwelly ERP | SwarnaVyapar | JewelMaker |
+|---|---|---|---|---|
+| **Sales Performance Charts** | ✅ Bar, Line, Pie, Heatmap | ✅ MIS reports | ✅ Real-time dashboard | ✅ Reports |
+| **Top-Selling Products** | ✅ By volume + revenue | ✅ By volume | ✅ Yes | ✅ Yes |
+| **Slow-Moving Inventory Report** | ✅ Yes (60+ days, 0 orders) | ✅ Yes | ✅ Unknown | ⚠️ Basic |
+| **Category Performance** | ✅ Pie chart + trend line | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Dealer Leaderboard** | ✅ **Yes (unique)** | ❌ No dealer concept | ❌ No | ❌ No |
+| **Dealer Activity Report** | ✅ **Login, views, cart, orders** | ❌ No | ❌ No | ❌ No |
+| **Inactive Dealer Alerts** | ✅ **Yes (30+ day inactivity)** | ❌ No | ❌ No | ❌ No |
+| **Dealer-Wise Preferences** | ✅ **Yes (what each dealer orders)** | ❌ No | ❌ No | ❌ No |
+| **Stock Turnover Rate** | ✅ Yes | ✅ Yes | ⚠️ Unknown | ⚠️ Unknown |
+| **Out-of-Stock Impact (Lost Demand)** | ✅ **Yes (lost demand tracking)** | ❌ No | ❌ No | ❌ No |
+| **Seasonal Demand Patterns** | ✅ Yes (monthly/quarterly) | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Day/Time-of-Day Activity** | ✅ **Yes (when dealers are active)** | ❌ No | ❌ No | ❌ No |
+| **New Arrivals Performance** | ✅ **Yes (views, cart adds, orders in first 7/14/30d)** | ❌ No | ❌ No | ❌ No |
+| **Export CSV / PDF** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Date Range Filter** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Demand Forecasting (AI)** | ✅ AI-based restock alerts | ❌ No | ✅ Yes (claimed 90% accuracy) | ❌ No |
+
+---
+
+### 3.6 AI & Machine Learning Features
+
+| AI Feature | Your Platform | Jwelly ERP | SwarnaVyapar | JewelMaker |
+|---|---|---|---|---|
+| **Visual Similarity Search (Dealer)** | ✅ **Upload image → find similar products** | ❌ Not dealer-facing | ❌ No | ❌ No |
+| **Image-Based Stock Filter (Internal)** | ✅ (as part of visual search) | ✅ Yes (staff tool) | ❌ No | ❌ No |
+| **AI Auto-Tagging on Upload** | ✅ **GPT-4o vision → Category, Metal, Stones, Tags** | ❌ No | ❌ No | ❌ No |
+| **AI Product Description Generation** | ✅ **One-click, from fields + images** | ❌ No | ❌ No | ❌ No |
+| **Natural Language Search** | ✅ **NL query → structured filters** | ❌ No | ✅ Yes (own store BI) | ❌ No |
+| **NL Business Q&A (Owner)** | ✅ **Ask questions about data** | ❌ No | ✅ Yes (Swarna AI BI) | ❌ No |
+| **Voice-Activated Billing** | ❌ Not planned | ✅ Yes | ✅ Yes | ❌ No |
+| **AI Invoice Scanning** | ❌ Not needed (B2B, no vendor invoices) | ❌ No | ✅ Yes (92% accuracy) | ❌ No |
+| **Demand Forecasting** | ✅ Time-series analysis + LLM summary | ❌ No | ✅ Yes | ❌ No |
+| **Weekly AI Business Digest** | ✅ **Auto-generated plain-language summary** | ❌ No | ⚠️ Dashboard only | ❌ No |
+| **Image Embeddings (pgvector)** | ✅ **Yes (CLIP embeddings stored)** | ❌ No | ❌ No | ❌ No |
+| **Smart Catalog (Photo Enhancement)** | ❌ Not needed (B2B admin uploads) | ✅ Yes (background removal, enhancement) | ❌ No | ❌ No |
+| **AI Graceful Degradation** | ✅ **Platform works fully without AI** | ✅ Yes | ⚠️ Core features are AI | ✅ No AI to degrade |
+
+---
+
+### 3.7 UI/UX & Product Experience
+
+| Dimension | Your Platform | Jwelly ERP | SwarnaVyapar | JewelMaker |
+|---|---|---|---|---|
+| **Design Language** | Modern, premium, image-forward, B2B e-comm | Legacy ERP, functional, dense | Modern SaaS, consumer-grade | Clean but basic |
+| **Dark Mode** | ✅ Yes | ❌ No | ✅ Yes | ❌ No |
+| **Image-Forward UI** | ✅ **Large thumbnails, zoom, carousel** | ⚠️ Functional images | ✅ Yes | ⚠️ Tablet catalog only |
+| **Dealer < 3-Click Product Find** | ✅ Designed for this | ❌ Not applicable | ✅ B2C focused | ⚠️ Unknown depth |
+| **Notifications / Activity Feed** | ✅ In-app bell + activity feed | ⚠️ Smart Alerts only | ❌ Unknown | ✅ Push notifications |
+
+---
+
+## Section 4: Strategic Gap Analysis
+
+### 4.1 What Exists (Solved Problems)
+| Problem | Best Solver Today |
+|---|---|
+| GST billing & tax compliance | Jwelly, JewelMaker, SwarnaVyapar |
+| Karigar / production management | Jwelly, JewelMaker |
+| Retail POS / fast billing | Jwelly, SwarnaVyapar |
+| Inventory tracking by weight/purity | All three |
+| Gold Loan (Girvi) management | Jwelly, SwarnaVyapar |
+| Barcode / RFID tagging | Jwelly, JewelMaker |
+| Basic B2B catalogue sharing | JewelMaker (WhatsApp), Jwelly (Mobile) |
+| Voice-activated operations | Jwelly AI, SwarnaVyapar |
+| AI invoice scanning | SwarnaVyapar |
+
+### 4.2 What Does NOT Exist (Your Opportunity)
+| Unsolved Problem | Your Solution |
+|---|---|
+| **Dealer cannot self-browse and self-order** without calling the owner or WhatsApping | Dealer Portal with cart + order punch |
+| **No order approval workflow** (owner approves, rejects, partially approves per line item) | Owner Order Management with workflow |
+| **No real-time catalogue** showing live stock as dealers browse | WebSocket-powered live inventory |
+| **"Find something like this" visual search for dealers** | AI Visual Similarity Search (CLIP + pgvector) |
+| **Auto-tagging on product upload saves hours** of manual entry | GPT-4o Vision auto-suggest tags/category |
+| **Dynamic custom fields** so platform works for any jewellery niche | Dynamic Schema Engine (JSONB) |
+| **Dealer-level analytics** — who's buying, what, when, who's inactive | Dealer Intelligence Module |
+| **Lost demand tracking** — who tried to order an out-of-stock item | Out-of-Stock Impact report |
+| **Product collections / campaigns** (Diwali 2026 collection) | Collections Module |
+| **Weekly AI business digest** in plain language | AI Business Digest |
+| **Natural language order search** for dealers — "show me gold rings under 50g" | NLP Search → Filter |
+| **Product description generation** from structured fields + images | 1-click AI Descriptions |
+| **Demand forecasting** surfaced proactively to owner dashboard | AI Demand Alerts |
+
+---
+
+## Section 5: Positioning Map
+
+```
+HIGH AI SOPHISTICATION
+        │
+        │  ★ YOUR PLATFORM
+        │  (B2B Discovery + AI)
+        │
+SwarnaVyapar (Retail AI)
+        │
+        │                        Jwelly ERP (Legacy AI)
+        │
+        │_________________________│________________________
+LOW AI                                             HIGH FEATURES
+        │
+        │                        JewelMaker (Feature-rich)
+        │
+        │
+LOW FEATURES
+```
+
+```
+B2C RETAIL FOCUS
+        │
+        │  SwarnaVyapar
+        │
+        │_________________________│________________________
+        │                                              B2B DEALER FOCUS
+Jwelly  │                              ★ YOUR PLATFORM
+(both)  │
+        │       JewelMaker
+        │       (basic B2B)
+        │
+```
+
+---
+
+## Section 6: Competitive Risk Assessment
+
+| Risk | Probability | Impact | Mitigation |
+|---|---|---|---|
+| **Jwelly adds a dealer-facing portal** | Medium | High | Move fast; build network effects (once dealers onboard, switching cost is high) |
+| **JewelMaker deepens their B2B portal** | High | Medium | Your AI features (visual search, auto-tag) create a moat they can't easily replicate |
+| **SwarnaVyapar pivots to B2B** | Low | Medium | Their brand is retail; a pivot would confuse their core users |
+| **New entrant copies your exact concept** | Medium | High | First-mover + network effects from dealer adoption + proprietary AI pipeline |
+| **Owner uses WhatsApp catalogue instead** | High | Medium | Your killer feature is the **order management workflow** + **analytics** — WhatsApp has zero of this |
+
+---
+
+## Section 7: Final Strategic Recommendations
+
+### Build Levers (What Makes You Sticky)
+1. **The Dealer Flywheel:** Once dealers are trained to log in and punch orders, they won't want to go back to WhatsApp. The order history, wishlist, and saved preferences create retention.
+2. **Owner Analytics Moat:** The dealer leaderboard, inactive dealer alerts, and lost demand tracking give the owner business intelligence they've literally never had before. This creates undeniable value.
+3. **Dynamic Schema Moat:** A Kundan wholesaler and a Diamond exporter can both use your platform because they define their own data model. Competitors are locked to fixed schemas.
+4. **AI Visual Discovery:** "Show me something like this" is the killer feature for dealers who can't describe what they want. No one in India is doing this in the jewellery B2B space.
+
+### Where You Should NOT Compete
+- **GST billing / tax accounting** — Solved well by all three competitors. Don't build it; interop with Tally/Busy instead.
+- **Karigar / manufacturing management** — Out of scope, handled by Jwelly/JewelMaker.
+- **Barcode/RFID hardware integration** — Unnecessary complexity; your QR/tag is software-only.
+- **Gold Loan / Girvi** — Not your user; Jwelly and SwarnaVyapar have this.
+- **Voice billing** — Nice to have but not differentiating; focus on your AI priorities first.
